@@ -1,7 +1,7 @@
 FROM debian:latest
 MAINTAINER Tyler Mulligan <z@xnz.me>
 
-ENV XONOTIC_DOWNLOAD_URL=http://dl.xonotic.org/xonotic-0.8.1.zip
+ENV XONOTIC_DOWNLOAD_URL=http://xonotic:g-23@beta.xonotic.org/autobuild/Xonotic-latest.zip
 
 RUN apt-get update && \
     apt-get install -y zip unzip curl wget git
