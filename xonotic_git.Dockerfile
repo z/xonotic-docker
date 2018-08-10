@@ -45,7 +45,7 @@ RUN ./all update -l best && \
 
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
+COPY server.cfg /opt/Xonotic/server
 CMD ["./all run dedicated"]
 
 EXPOSE 26000
