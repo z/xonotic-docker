@@ -15,7 +15,7 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /opt/Xonotic
-
+COPY server.cfg /opt/Xonotic/server
 CMD ["/opt/Xonotic/server_linux.sh"]
 
 EXPOSE 26000
